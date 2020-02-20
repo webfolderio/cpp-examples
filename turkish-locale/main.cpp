@@ -5,7 +5,6 @@
 
 #ifdef _MSC_VER
 #include <Windows.h>
-#include <wchar.h>
 #include <WinNls.h>
 #endif
 
@@ -28,7 +27,7 @@ public:
 static std::string GetLocale() {
 #ifdef _MSC_VER
     wchar_t locale[LOCALE_NAME_MAX_LENGTH] = {};
-    int ret = GetUserDefaultLocaleName(locale, sizeof(locale) / sizeof(*(locale)));
+    int ret = GetUserDefaultLocaleName(locale, sizeof(locale) / sizeof(*locale));
     if(ret == 0) {
         return "";
     }
