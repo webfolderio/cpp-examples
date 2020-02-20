@@ -30,3 +30,5 @@
 *.exe
 *.out
 *.app
+/turkish-locale/cmake-build-debug
+/turkish-locale/.idea
