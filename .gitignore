@@ -32,3 +32,5 @@
 *.app
 /turkish-locale/cmake-build-debug
 /turkish-locale/.idea
+/google-test/.idea
+/google-test/cmake-build-debug-visual-studio
